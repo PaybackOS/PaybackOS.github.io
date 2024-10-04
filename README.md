@@ -1,7 +1,26 @@
 # PaybackOS
 
-Why does this OS even exist, well our reasoning is very simple, we dislike modern Operating Systems, this OS is payback for all the time you and me wasted on changing tiny things in our boot config or our registry, and so on.
+## What is PaybackOS
 
-## Where do you find PaybackOS
+PaybackOS is a lightweight OS, meant for CLI use, it plans to have a ELF program loading, and a disk driver for FAT32 or any filesystem for that matter, and a disk reading function to get the raw data.
 
-Since our OS is in such early stages you can only get it from compiling from source, in the future we may implement more ways to get it and install it.
+## Install guide
+First install grub-mkresuce (preinstalled on debian 12), grub-pc-bin (on BIOS machines this is already here will not screw up a UEFI machine), i686-elf-gcc, i686-elf-binutils, mtools, xorriso optionally qemu-system-x86_64, git, make, then run make and if you want to run in qemu make run, to install the i686-elf tools use brew like this
+```bash
+brew install i686-elf-gcc
+```
+this will also install binutils then for the other tools install it like this
+
+```bash
+sudo apt install grub-pc-bin mtools xorriso qemu-system-x86 git make
+```
+then run
+```bash
+git clone https://github.com/PaybackOS/PaybackOS
+cd PaybackOS
+```
+This will clone PaybackOS, now run this to build and run it.
+```bash
+make
+make run
+```
