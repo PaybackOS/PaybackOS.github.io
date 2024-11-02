@@ -2,25 +2,31 @@
 
 ## What is PaybackOS
 
-PaybackOS is a lightweight OS, meant for CLI use, it plans to have a ELF program loading, and a disk driver for FAT32 or any filesystem for that matter, and a disk reading function to get the raw data.
+PaybackOS is a lightweight OS, meant for CLI use, we plan to implement a disk driver, and more to get apps running at some point.
 
-## Install guide
-First install grub-mkresuce (preinstalled on debian 12), grub-pc-bin (on BIOS machines this is already here will not screw up a UEFI machine), i686-elf-gcc, i686-elf-binutils, mtools, xorriso optionally qemu-system-x86_64, git, make, then run make and if you want to run in qemu make run, to install the i686-elf tools use brew like this
-```bash
-brew install i686-elf-gcc
-```
-this will also install binutils then for the other tools install it like this
+## License
 
-```bash
-sudo apt install grub-pc-bin mtools xorriso qemu-system-x86 git make
-```
-then run
-```bash
-git clone https://github.com/PaybackOS/PaybackOS
-cd PaybackOS
-```
-This will clone PaybackOS, now run this to build and run it.
-```bash
-make
-make run
-```
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to http://unlicense.org/
